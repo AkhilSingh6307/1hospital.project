@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital | Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="appointment-page">
+    <header>
+        <img src="C:\Users\dell\Desktop\hospitls project\img.png\logo.png (3).png" alt="Hospital Logo" class="logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="doctor.html">Doctors</a>
+            <button id="logoutBtn">Logout</button>
+        </nav>
+    </header>
+    <main class="content-container">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm">
+            <label for="docSelect">Select Doctor:</label>
+            <select id="docSelect" name="doctor" required>
+                <option value="">-- Select --</option>
+                <option value="Dr. Amit Sharma">Dr. Amit Sharma (Cardiologist)</option>
+                <option value="Dr. Priya Singh">Dr. Priya Singh (Pediatrician)</option>
+            </select>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time Slot:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <button type="submit">Submit Appointment</button>
+        </form>
+        <p id="appointmentMessage" style="color: green; margin-top: 15px;"></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hospital Management System.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
